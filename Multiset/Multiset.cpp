@@ -31,10 +31,10 @@ void Multiset::readFromFile(std::ifstream& rff) {
 }
 void Multiset::print() {
     Node* p(head);
-    std::cout << "Ýëåìåíòû ìíîæåñòâà:\n";
+    std::cout << "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ Ð¼Ð½Ð¾Ð¶ÐµÑÑ‚Ð²Ð°:\n";
     while (p != nullptr)
     {
-        std::cout << "Ýëåìåíò: " << p->data << ", " << "Êîëè÷åñòâî: "<<p->elemCount<<'\n';
+        std::cout << "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚: " << p->data << ", " << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾: "<<p->elemCount<<'\n';
         p = p->next;
     }
 }
@@ -104,10 +104,10 @@ MultisetPair::~MultisetPair()
 }
 void MultisetPair::print() {
     Node* p(head);
-    std::cout << "Ýëåìåíòû ìíîæåñòâà:\n";
+    std::cout << "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ Ð¼Ð½Ð¾Ð¶ÐµÑÑ‚Ð²Ð°:\n";
     while (p != nullptr)
     {
-        std::cout << "Ýëåìåíò: (" << p->data.first() << "," << p->data.second() << "), " << "êîëè÷åñòâî: " << p->elemCount << '\n';
+        std::cout << "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚: (" << p->data.first() << "," << p->data.second() << "), " << "ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾: " << p->elemCount << '\n';
         p = p->next;
     }
 }
